@@ -33,7 +33,7 @@ function About() {
                     About Us
                   </h1>
                   <div className="page-header__menu">
-                    <h3 className="text-6xl text-center text-white font-semibold">
+                    <h3 className="text-5xl lg:text-6xl text-center text-white font-semibold">
                       Precision is More Than a Metric. It&apos;s the Core of Our
                       Engineering Philosophy.
                     </h3>
@@ -132,9 +132,9 @@ function About() {
           <h2 className="sec-title__title pt-2">WHY CHOOSE US?</h2>
         </div>
 
-        <div className="flex flex-wrap gap-y-6 ">
+        <div className="flex flex-wrap gap-y-10 lg:gap-y-6 ">
           {solutions.map((item, index) => (
-            <div className="about-two__content-text2 w-[50%]" key={index}>
+            <div className="about-two__content-text2 lg:w-[50%]" key={index}>
               <h3 className="text-3xl font-bold">{item.title}</h3>
               <p className="pt-2 lg:pr-20">{item.description}</p>
             </div>

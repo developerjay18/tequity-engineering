@@ -1,9 +1,14 @@
 import React, { useState } from 'react';
 import { ECMPoints, ECMPoints2 } from './data';
+import { Link } from 'react-router-dom';
 
 function ECMMachine() {
   const aboutBG = {
     backgroundImage: `url(https://res.cloudinary.com/practice-jay-cloud/image/upload/v1707274901/tequity/about/oibshld2dn4zwm9ywbgd.jpg)`,
+  };
+
+  const CTABG = {
+    backgroundImage: `url(https://res.cloudinary.com/practice-jay-cloud/image/upload/v1707219251/tequity/home/fl0ef9pd2lze8jghbp45.jpg)`,
   };
 
   // State to keep track of the selected option
@@ -57,7 +62,7 @@ function ECMMachine() {
             <div className="col-xl-12">
               <div className="page-header__wrapper">
                 <div className="page-header__content">
-                  <h1 className="text-6xl pt-10 pb-5 text-white text-center">
+                  <h1 className="text-4xl lg:text-6xl pt-10 pb-5 text-white text-center">
                     TEQ-ECM: 3 in 1 Electro-Chemical Machining (ECM) Machining
                     Center
                   </h1>
@@ -88,7 +93,7 @@ function ECMMachine() {
                 data-wow-duration="1500ms"
                 key={index}
               >
-                <div className="cursor-pointer min-h-[58vh] services-one__single text-center">
+                <div className="cursor-pointer lg:min-h-[58vh] services-one__single text-center">
                   <h2>
                     <a>
                       <div>{item.title}</div>
@@ -114,7 +119,7 @@ function ECMMachine() {
           <div className="sec-title text-center">
             <h2 className="sec-title__title">3 Processes 1 Machine</h2>
           </div>
-          <div className="row flex flex-col lg:flex-row justify-between">
+          <div className="row flex flex-col lg:flex-row justify-between gap-16 lg:gap-0">
             {ECMPoints2.map((item, index) => (
               <div
                 className="lg:w-[30%] shadow-xl p-5 wow animated fadeInUp"
@@ -144,11 +149,8 @@ function ECMMachine() {
         <div>
           {/* Bar containing three options */}
           <div
-            style={{
-              display: 'flex',
-              marginBottom: '20px',
-            }}
-            className="border border-[#f37e21] container mx-auto flex justify-evenly py-8"
+            style={{}}
+            className="border border-[#f37e21] container mx-auto flex justify-evenly py-8 flex-col lg:flex-row gap-5 lg:gap-0"
           >
             <button
               onClick={() => handleOptionSelect('option1')}
@@ -178,13 +180,16 @@ function ECMMachine() {
             </button>
           </div>
 
-          <div className="container mx-auto flex flex-col justify-center items-center lg:flex-row">
+          <div className="container mx-auto flex flex-col justify-center items-center lg:flex-row gap-10 lg:gap-0">
             {/* Display information based on selected option */}
-            <div style={{ textAlign: 'center' }} className="w-[50%]">
+            <div style={{ textAlign: 'center' }} className="lg:w-[50%]">
               {selectedOption && (
-                <div className="container mx-auto text-left">
+                <div className="container mx-auto text-left pt-10 lg:pt-0">
                   {optionsInfo[selectedOption].map((item, index) => (
-                    <h2 className="font-Domine text-xl py-1" key={index}>
+                    <h2
+                      className="font-Domine text-xl py-1 flex gap-4"
+                      key={index}
+                    >
                       <span>
                         <i className="fa-solid fa-arrow-right"></i>
                       </span>
@@ -195,12 +200,35 @@ function ECMMachine() {
               )}
             </div>
 
-            <div className="w-[50%]">
+            <div className="lg:w-[50%]">
               <img
                 src="https://res.cloudinary.com/practice-jay-cloud/image/upload/v1707140608/tequity/ecm/wbgdnoxmk405unjfbj4m.jpg"
                 alt=""
                 className=""
               />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA line  */}
+      <section className="video-one mt-16 py-10 pb-24">
+        <div className="container mx-auto">
+          <div className="row">
+            <div className="col-xl-12">
+              <div className="video-one__inner text-center" style={CTABG}>
+                <h2>
+                  Get a comprehensive guide on <br /> our TEQ-ECM
+                  technology&apos;s intricate <br /> capabilities and
+                  applications.
+                </h2>
+
+                <div className="video-one__bottom">
+                  <div className="text">
+                    <Link to={'/contact'}>Download Brochure</Link>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

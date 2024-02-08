@@ -53,4 +53,105 @@ const ECMPoints2 = [
   },
 ];
 
-export { ECMPoints, ECMPoints2 };
+const CNCPoints = [
+  {
+    title: 'Precision Micro-Machining Hub',
+    description:
+      'Explore nano-precision proficiency engineered for dynamic agility and meticulous accuracy across every spectrum of machining applications.',
+  },
+  {
+    title: 'High-Performance Spindle',
+    description:
+      'Gain a decisive advantage with an 800W spindle crafted for relentless high-velocity milling at 12000 rpm to achieve superior precision and efficiency.',
+  },
+  {
+    title: 'Innovation with Affordability',
+    description:
+      'Experience limitless innovation at limited costs while attaining sub-100 micron features for unmatched precision with a focus on cost-efficiency.',
+  },
+  {
+    title: 'Ultra-Specific Calibration',
+    description:
+      'Command cutting-edge precision with Diode Laser engraving to render intricate designs with micron-level accuracy for microfluidic applications.',
+  },
+  {
+    title: 'Omni-Sector',
+    title2: 'Versatility',
+    description:
+      'Exploit the versatility of cutting-edge precision with Diode Laser engraving, achieving micron-level accuracy for diverse applications across industries.',
+  },
+  {
+    title: 'Benefit',
+    title2: '6',
+    description:
+      'Command cutting-edge precision with Diode Laser engraving to render intricate designs with micron-level accuracy for microfluidic applications.',
+  },
+];
+
+const SDPPoints = [
+  {
+    title: 'Revolutionary SPD Process',
+    description:
+      'Redefine the boundaries of 3D printing by enabling the production of metal, glass, sand, and composite materials with unparalleled precision.',
+  },
+  {
+    title: 'Expansive Build Volume',
+    description:
+      'Bring the boldest designs to life with intricate detailing with an impressive build volume of 279x274x110 mm and a spacious canvas for your creations.',
+  },
+  {
+    title: 'Versatile Pourer Diameter Options',
+    description:
+      'Tailor your prints with precision by choosing between two pourer diameter options—0.9 mm for fine detailing and 1.9 mm for a coarse finish.',
+  },
+  {
+    title: 'Customisable Layer Height',
+    description:
+      'Achieve the desired level of intricacy in your designs with layer height configurability ranging from 0.1 to 1 mm, adaptable to your specific requirements.',
+  },
+  {
+    title: 'Advanced Powder Deposition System',
+    description:
+      'Ensure precise and consistent material delivery with a sophisticated powder deposition system featuring four hoppers, two fine pourers, and docking stations.',
+  },
+  {
+    title: 'Streamlined Process for Infilling and Sintering',
+    description:
+      'Streamline the complexities of infilling and sintering, ensuring fluidity through loading, slicing, precise heat application, and seamless post-processing.',
+  },
+];
+
+const filamentPoints = [
+  {
+    title: 'Transform Plastic Waste into Innovation',
+    description:
+      'Recycle plastic waste and failed prints on your desktop, turning them into valuable resources for your next projects.',
+  },
+  {
+    title: 'Versatile Filament Options',
+    description:
+      'Choose from a range of Filament Maker options, from cutting-edge technology for research to production-ready capabilities with high flow and a powerful extruder.',
+  },
+  {
+    title: 'Precision Filament Production',
+    description:
+      'Experience top-notch filament extrusion with temperatures up to 450°C, a refined diameter range, and durable nitride-hardened screws.',
+  },
+  {
+    title: 'Unmatched Filament Quality',
+    description:
+      'The machine comes with an advanced sensor system, ensuring precise filament diameter, camera-assisted calibration, and real-time visual inspection for unparalleled quality.',
+  },
+  {
+    title: 'User-Friendly Design',
+    description:
+      'With an intuitive 7" LCD touchscreen, easy connectivity to your computer, and hassle-free maintenance design, the Filament Maker TWO series ensures user-friendly control for effortless operation.',
+  },
+  {
+    title: 'Effortless Research and Development',
+    description:
+      'Fuel your material R&D with ease. Conduct experiments with as little as 50 grams of polymer for quick results and resource conservation.',
+  },
+];
+
+export { ECMPoints, ECMPoints2, CNCPoints, SDPPoints, filamentPoints };

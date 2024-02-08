@@ -1,7 +1,45 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Menu, X, ChevronDown, ChevronRight } from 'lucide-react';
+
+const menuItems = [
+  {
+    name: 'Home',
+    href: '/',
+  },
+  {
+    name: 'About',
+    href: '/about',
+  },
+  {
+    name: 'Electro-Chemical Machining',
+    href: '/ecm-machine',
+  },
+  {
+    name: 'CNC Micro Machining Center',
+    href: '/cnc-micro-machine',
+  },
+  {
+    name: '3devo Filament Maker',
+    href: '/filament-maker',
+  },
+  {
+    name: 'Electro-Chemical Machining',
+    href: '/ecm-machine',
+  },
+  {
+    name: 'Contact',
+    href: '/contact',
+  },
+];
 
 function Navbar() {
+  const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
     <header className="main-header main-header--one clearfix">
       <div className="main-header--one__wrapper">
@@ -93,6 +131,61 @@ function Navbar() {
                 </ul>
               </div>
             </div>
+
+            {/* menubar  */}
+            <div className="lg:hidden">
+              <Menu
+                onClick={toggleMenu}
+                className="h-6 w-6 cursor-pointer text-white"
+              />
+            </div>
+            {isMenuOpen && (
+              <div className="absolute inset-x-0 top-0 z-50 origin-top-right transform p-2 transition lg:hidden">
+                <div className="divide-y-2 divide-gray-50 rounded-lg bg-white shadow-lg ring-1 ring-black ring-opacity-5">
+                  <div className="px-5 pb-6 pt-5">
+                    <div className="flex items-center justify-between">
+                      <div className="inline-flex items-center space-x-2">
+                        <span className="w-[30%]">
+                          <img
+                            src="https://res.cloudinary.com/practice-jay-cloud/image/upload/v1707192843/tequity/owxyeidft9qdgwyc5vdi.png"
+                            alt=""
+                            className=""
+                          />
+                        </span>
+                        <span className="font-bold border w-full">
+                          Tequity Engineerings
+                        </span>
+                      </div>
+                      <div className="-mr-2">
+                        <button
+                          type="button"
+                          onClick={toggleMenu}
+                          className="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
+                        >
+                          <span className="sr-only">Close menu</span>
+                          <X className="h-6 w-6" aria-hidden="true" />
+                        </button>
+                      </div>
+                    </div>
+                    <div className="mt-6">
+                      <nav className="grid gap-y-4">
+                        {menuItems.map((item) => (
+                          <Link
+                            key={item.name}
+                            href={item.href}
+                            className="-m-3 flex items-center rounded-md p-3 text-sm font-semibold hover:bg-gray-50"
+                          >
+                            <span className="ml-3 text-base font-medium text-gray-900">
+                              {item.name}
+                            </span>
+                          </Link>
+                        ))}
+                      </nav>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            )}
           </div>
         </div>
       </div>
