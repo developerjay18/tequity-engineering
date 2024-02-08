@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ECMPoints, ECMPoints2, SDPPoints } from './data';
+import { ScrollToTop } from '../../components';
 
 function SPDMetalPrinter() {
   const aboutBG = {
@@ -63,6 +64,7 @@ function SPDMetalPrinter() {
 
   return (
     <div>
+      <ScrollToTop />
       {/* hero section  */}
       <section className="page-header page-header--services-single-one">
         <div className="text-black text-5xl"></div>

@@ -4,6 +4,7 @@ import { aboutPoints, listDetails, productDetails } from './data';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import { ScrollToTop } from '../../components';
 
 function Home() {
   const homeBG = {
@@ -31,6 +32,8 @@ function Home() {
 
   return (
     <div className="max-w-screen overflow-hidden">
+      <ScrollToTop />
+
       {/* hero section  */}
       <section className="main-slider main-slider-one">
         <div className="swiper-container thm-swiper__slider">

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { CNCPoints, ECMPoints, ECMPoints2 } from './data';
 import { Link } from 'react-router-dom';
+import { ScrollToTop } from '../../components';
 
 function CNCMicroMac() {
   const aboutBG = {
@@ -60,6 +61,7 @@ function CNCMicroMac() {
 
   return (
     <div>
+      <ScrollToTop />
       {/* hero section  */}
       <section className="page-header page-header--services-single-one">
         <div className="text-black text-5xl"></div>
@@ -121,8 +123,7 @@ function CNCMicroMac() {
         <div>
           {/* Bar containing three options */}
           <div
-            style={{
-            }}
+            style={{}}
             className="border border-[#f37e21] container mx-auto flex justify-evenly py-8 flex-col lg:flex-row gap-5 lg:gap-0"
           >
             <button
@@ -161,7 +162,10 @@ function CNCMicroMac() {
 
           <div className="container mx-auto flex flex-col justify-center items-center lg:flex-row gap-10 lg:gap-0">
             {/* Display information based on selected option */}
-            <div style={{ textAlign: 'center' }} className="pt-10 lg:pt-0 lg:w-[50%]">
+            <div
+              style={{ textAlign: 'center' }}
+              className="pt-10 lg:pt-0 lg:w-[50%]"
+            >
               {selectedOption && (
                 <div className="container mx-auto text-left">
                   {optionsInfo[selectedOption].map((item, index) => (

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { ECMPoints, ECMPoints2 } from './data';
 import { Link } from 'react-router-dom';
+import { ScrollToTop } from '../../components';
 
 function ECMMachine() {
   const aboutBG = {
@@ -53,6 +54,7 @@ function ECMMachine() {
 
   return (
     <div>
+      <ScrollToTop />
       {/* hero section  */}
       <section className="page-header page-header--services-single-one">
         <div className="text-black text-5xl"></div>

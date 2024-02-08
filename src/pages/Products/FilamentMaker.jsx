@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { SDPPoints, filamentPoints } from './data';
+import { ScrollToTop } from '../../components';
 
 function FilamentMaker() {
   const aboutBG = {
@@ -42,6 +43,7 @@ function FilamentMaker() {
 
   return (
     <div>
+      <ScrollToTop />
       {/* hero section  */}
       <section className="page-header page-header--services-single-one">
         <div className="text-black text-5xl"></div>

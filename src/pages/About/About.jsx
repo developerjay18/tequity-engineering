@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { solutions } from './data';
+import { ScrollToTop } from '../../components';
 
 function About() {
   const aboutBG = {
@@ -20,6 +21,7 @@ function About() {
 
   return (
     <div>
+      <ScrollToTop />
       {/* hero section  */}
       <section className="page-header page-header--services-single-one">
         <div className="text-black text-5xl"></div>

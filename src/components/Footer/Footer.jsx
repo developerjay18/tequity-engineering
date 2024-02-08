@@ -31,11 +31,17 @@ function Footer() {
                         </Link>
                       </div>
                       <p className="footer-widget__about-text">
-                        48 10h Street, Office 478 Road 5<br />
-                        Berlin, CA 700156
+                        Unit 104, Mastermind IV, Royal Palms, Aarey colony,
+                        Goregaon, Mumbai 65
                       </p>
                       <p className="footer-widget__about-email">
-                        <Link to={'/gmail-address'}>infogamil@gmail.com</Link>
+                        <Link
+                          to={
+                            'https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=sales.teuquity@gmail.com'
+                          }
+                        >
+                          sales.teuquity@gmail.com
+                        </Link>
                       </p>
                     </div>
                   </div>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { ScrollToTop } from '../../components';
 
 function Contact() {
   const contactBG = {
@@ -7,6 +8,7 @@ function Contact() {
 
   return (
     <div>
+      <ScrollToTop />
       {/* hero section  */}
       <section className="page-header page-header--services-single-one">
         <div className="page-header__bg" style={contactBG}></div>
