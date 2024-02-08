@@ -42,26 +42,34 @@ function Footer() {
 
                   {/* products + links */}
                   <div
-                    className="lg:w-[15%] pl-5 lg:pl-0 wow animated fadeInUp"
+                    className="lg:w-[20%] pl-5 lg:pl-0 wow animated fadeInUp"
                     data-wow-delay="0.3s"
                   >
                     <div className="footer-widget__column footer-widget__services">
                       <h2 className="footer-widget__title">Services</h2>
                       <ul className="footer-widget__services-list">
                         <li className="footer-widget__services-list-item">
-                          <a href="#">Flooring</a>
+                          <Link to={'/ecm-machine'}>
+                            Electro-Chemical Machining
+                          </Link>
                         </li>
                         <li className="footer-widget__services-list-item">
-                          <a href="#">Wood Floor</a>
+                          <Link to={'/cnc-micro-machine'}>
+                            {' '}
+                            CNC Micro Machining Center
+                          </Link>
                         </li>
                         <li className="footer-widget__services-list-item">
-                          <a href="#">Woodhard </a>
+                          <Link to={'/spd-metal-printer'}>
+                            {' '}
+                            SPD Metal 3D Printer{' '}
+                          </Link>
                         </li>
                         <li className="footer-widget__services-list-item">
-                          <a href="#">Tiles setup</a>
-                        </li>
-                        <li className="footer-widget__services-list-item">
-                          <a href="#">Carpet Setup</a>
+                          <Link to={'/filament-maker'}>
+                            {' '}
+                            3devo Filament Maker
+                          </Link>
                         </li>
                       </ul>
                     </div>
@@ -76,19 +84,15 @@ function Footer() {
                       <h2 className="footer-widget__title">Quick Links</h2>
                       <ul className="footer-widget__quick-links-list">
                         <li className="footer-widget__quick-links-list-item">
-                          <a href="contact.html">Contact us</a>
+                          <Link to={'/'}>Home</Link>
                         </li>
+
                         <li className="footer-widget__quick-links-list-item">
-                          <a href="team.html">Member</a>
+                          <Link to={'/about'}>About Us</Link>
                         </li>
+
                         <li className="footer-widget__quick-links-list-item">
-                          <a href="protfolio.html">Our Project</a>
-                        </li>
-                        <li className="footer-widget__quick-links-list-item">
-                          <a href="about.html">About Company</a>
-                        </li>
-                        <li className="footer-widget__quick-links-list-item">
-                          <a href="blog.html">News Update</a>
+                          <Link to={'/contact'}>Contact</Link>
                         </li>
                       </ul>
                     </div>
@@ -141,7 +145,10 @@ function Footer() {
             <div className="col-xl-12">
               <div className="footer-one__bottom-inner">
                 <div className="footer-one__bottom-text w-full text-center">
-                  <p>Copyright &copy; 2022 All Rights Reserved by</p>
+                  <p>
+                    Copyright &copy; 2022 All Rights Reserved by Tequity
+                    Engineerings
+                  </p>
                 </div>
               </div>
             </div>
