@@ -8,7 +8,7 @@ import { ScrollToTop } from '../../components';
 
 function Home() {
   const homeBG = {
-    backgroundImage: `url(https://res.cloudinary.com/practice-jay-cloud/image/upload/v1707198817/tequity/home/w0otsqvr5rwczbclb753.jpg)`,
+    backgroundImage: `url(https://res.cloudinary.com/practice-jay-cloud/image/upload/v1707201183/tequity/home/buokiqeyrbtazfe6oklw.jpg)`,
   };
 
   const CTABG = {

@@ -1,7 +1,6 @@
 const ECMPoints = [
   {
-    title: 'High-Speed',
-    title2: 'Precision',
+    title: 'High-Speed Precision',
     description:
       'TEQ-ECM elevates precision machining with swift, high-speed capabilities, consistently exceeding industry standards for unmatched efficiency.',
   },
@@ -154,4 +153,47 @@ const filamentPoints = [
   },
 ];
 
-export { ECMPoints, ECMPoints2, CNCPoints, SDPPoints, filamentPoints };
+const filamentImages = [
+  'https://res.cloudinary.com/practice-jay-cloud/image/upload/v1707210447/tequity/filament-maker/rcqy5loj8crfcm4afeod.webp',
+  'https://res.cloudinary.com/practice-jay-cloud/image/upload/v1707210444/tequity/filament-maker/zbssgz83wngrqs6zot8u.png',
+  'https://res.cloudinary.com/practice-jay-cloud/image/upload/v1707210444/tequity/filament-maker/o5wco1mjhsbb8foczdzu.png',
+  'https://res.cloudinary.com/practice-jay-cloud/image/upload/v1707210449/tequity/filament-maker/kt73uonf0gyydzn9lj0z.png',
+  'https://res.cloudinary.com/practice-jay-cloud/image/upload/v1707210442/tequity/filament-maker/ruoxh6i5mayafozt9a2c.webp',
+  'https://res.cloudinary.com/practice-jay-cloud/image/upload/v1707210447/tequity/filament-maker/rcqy5loj8crfcm4afeod.webp',
+];
+
+const SPDPrinterImages = [
+  'https://res.cloudinary.com/practice-jay-cloud/image/upload/v1707211189/tequity/3d-printer/lqouvilhjca5uw6da1hf.jpg',
+  'https://res.cloudinary.com/practice-jay-cloud/image/upload/v1707211202/tequity/3d-printer/gupljtfbdwxwyob3ao3b.jpg',
+  'https://res.cloudinary.com/practice-jay-cloud/image/upload/v1707211195/tequity/3d-printer/y1s3lbn6drxs6rrgfkrn.jpg',
+  'https://res.cloudinary.com/practice-jay-cloud/image/upload/v1707211216/tequity/3d-printer/vz3g1ecpkvubuzuicncu.jpg',
+  'https://res.cloudinary.com/practice-jay-cloud/image/upload/v1707211214/tequity/3d-printer/s94npb6k8grdsdtscumr.jpg',
+  'https://res.cloudinary.com/practice-jay-cloud/image/upload/v1707211224/tequity/3d-printer/hhbrfuln27cjp41508o1.jpg',
+];
+
+const CNCMMImages = [
+  'https://res.cloudinary.com/practice-jay-cloud/image/upload/v1707210818/tequity/cnc-micro-machining/s8st9vqhtw1jmicl1def.jpg',
+  'https://res.cloudinary.com/practice-jay-cloud/image/upload/v1707210811/tequity/cnc-micro-machining/sbteochjs4vkzh84awoz.jpg',
+  'https://res.cloudinary.com/practice-jay-cloud/image/upload/v1707210751/tequity/cnc-micro-machining/nztjduhb9n6zdgndckr7.jpg',
+  'https://res.cloudinary.com/practice-jay-cloud/image/upload/v1707210799/tequity/cnc-micro-machining/e4otufedkctneabakhfs.jpg',
+  'https://res.cloudinary.com/practice-jay-cloud/image/upload/v1707210766/tequity/cnc-micro-machining/yvbq0y4meoxxma37hoil.jpg',
+  'https://res.cloudinary.com/practice-jay-cloud/image/upload/v1707210702/tequity/cnc-micro-machining/jbdvzszzx5vofsmwxt5l.jpg',
+];
+
+const ECMMachinesImages = [
+  'https://res.cloudinary.com/practice-jay-cloud/image/upload/v1707140608/tequity/ecm/wbgdnoxmk405unjfbj4m.jpg',
+  'https://res.cloudinary.com/practice-jay-cloud/image/upload/v1707140608/tequity/ecm/dwttt0rtsq6wk2lpq2cg.jpg',
+  'https://res.cloudinary.com/practice-jay-cloud/image/upload/v1707140608/tequity/ecm/frgdmpajmhq67azbin2r.jpg',
+];
+
+export {
+  ECMPoints,
+  ECMPoints2,
+  CNCPoints,
+  SDPPoints,
+  filamentPoints,
+  filamentImages,
+  SPDPrinterImages,
+  CNCMMImages,
+  ECMMachinesImages,
+};

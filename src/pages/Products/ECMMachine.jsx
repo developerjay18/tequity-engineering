@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import { ECMPoints, ECMPoints2 } from './data';
+import { ECMMachinesImages, ECMPoints, ECMPoints2 } from './data';
 import { Link } from 'react-router-dom';
 import { ScrollToTop } from '../../components';
 
 function ECMMachine() {
   const aboutBG = {
-    backgroundImage: `url(https://res.cloudinary.com/practice-jay-cloud/image/upload/v1707274901/tequity/about/oibshld2dn4zwm9ywbgd.jpg)`,
+    backgroundImage: `url(https://res.cloudinary.com/practice-jay-cloud/image/upload/v1707494589/tequity/ecm/bdjaiqc32rfc2x9wuzzk.jpg)`,
   };
 
   const CTABG = {
@@ -14,6 +14,7 @@ function ECMMachine() {
 
   // State to keep track of the selected option
   const [selectedOption, setSelectedOption] = useState(null);
+  const [isColor, setIsColor] = useState(false);
 
   // Function to handle option selection
   const handleOptionSelect = (option) => {
@@ -87,15 +88,15 @@ function ECMMachine() {
             <h2 className="sec-title__title">Key features</h2>
           </div>
 
-          <div className="flex justify-between flex-wrap flex-col lg:flex-row">
+          <div className="flex justify-between flex-wrap flex-col lg:flex-row gap-5">
             {ECMPoints.map((item, index) => (
               <div
-                className="lg:w-[30%] wow fadeInLeft"
+                className="lg:w-[48%] wow fadeInLeft"
                 data-wow-delay="0ms"
                 data-wow-duration="1500ms"
                 key={index}
               >
-                <div className="cursor-pointer lg:min-h-[58vh] services-one__single text-center">
+                <div className="cursor-pointer services-one__single ">
                   <h2>
                     <a>
                       <div>{item.title}</div>
@@ -103,7 +104,7 @@ function ECMMachine() {
                     </a>
                   </h2>
                   <div className="text">
-                    <p className="px-5">{item.description}</p>
+                    <p className="">{item.description}</p>
                   </div>
                 </div>
               </div>
@@ -146,36 +147,70 @@ function ECMMachine() {
         </div>
       </section>
 
+      {/* gallery section  */}
+      <section className="team-one team-one--team mt-10 lg:mb-0 lg:pb-10">
+        <div className="container mx-auto">
+          <div className="sec-title text-center">
+            <h2 className="sec-title__title">ECM Machine</h2>
+          </div>
+          <div className="row flex flex-wrap justify-between gap-8 flex-col lg:flex-row">
+            {ECMMachinesImages.map((item, index) => (
+              <div
+                className="wow fadeInLeft lg:w-[30%] "
+                data-wow-delay="0ms"
+                data-wow-duration="1500ms"
+                key={index}
+              >
+                <div className="team-one__single">
+                  <div className="team-one__single-img">
+                    <img src={item} alt="" />
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* dynamic bar section  */}
       <section className="py-20">
         <div>
           {/* Bar containing three options */}
-          <div
-            style={{}}
-            className="border border-[#f37e21] container mx-auto flex justify-evenly py-8 flex-col lg:flex-row gap-5 lg:gap-0"
-          >
+          <div className="border border-[#f37e21] container mx-auto flex justify-evenly py-8 flex-col lg:flex-row gap-5 lg:gap-0">
             <button
               onClick={() => handleOptionSelect('option1')}
-              style={{ marginRight: '10px' }}
+              style={{
+                marginRight: '10px',
+                color: selectedOption === 'option1' ? '#f37e21' : 'black',
+              }}
               className="font-Domine text-xl"
             >
               Precision <br /> Motion
             </button>
             <button
               onClick={() => handleOptionSelect('option2')}
-              style={{ marginRight: '10px' }}
+              style={{
+                marginRight: '10px',
+                color: selectedOption === 'option2' ? '#f37e21' : 'black',
+              }}
               className="font-Domine text-xl"
             >
               Advanced ECM <br /> Power Supply
             </button>
             <button
               onClick={() => handleOptionSelect('option3')}
+              style={{
+                color: selectedOption === 'option3' ? '#f37e21' : 'black',
+              }}
               className="font-Domine text-xl"
             >
               Efficient Machine <br /> Control
             </button>
             <button
               onClick={() => handleOptionSelect('option4')}
+              style={{
+                color: selectedOption === 'option4' ? '#f37e21' : 'black',
+              }}
               className="font-Domine text-xl"
             >
               ECM System <br /> Enhancements
@@ -202,7 +237,7 @@ function ECMMachine() {
               )}
             </div>
 
-            <div className="lg:w-[50%]">
+            <div className="lg:w-[50%] lg:pt-10">
               <img
                 src="https://res.cloudinary.com/practice-jay-cloud/image/upload/v1707140608/tequity/ecm/wbgdnoxmk405unjfbj4m.jpg"
                 alt=""

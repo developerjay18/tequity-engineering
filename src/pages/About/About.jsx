@@ -5,7 +5,7 @@ import { ScrollToTop } from '../../components';
 
 function About() {
   const aboutBG = {
-    backgroundImage: `url(https://res.cloudinary.com/practice-jay-cloud/image/upload/v1707274901/tequity/about/oibshld2dn4zwm9ywbgd.jpg)`,
+    backgroundImage: `url(https://res.cloudinary.com/practice-jay-cloud/image/upload/v1707493914/tequity/home/gb20ezm1cmkz3euoazaa.jpg)`,
   };
 
   const hAnimation = {

@@ -54,21 +54,21 @@ const listDetails = [
     description:
       'Simplify medical manufacturing with our specialised machines, designed to meet high healthcare standards for precision in creating medical devices and components.',
     imgUrl:
-      'https://res.cloudinary.com/practice-jay-cloud/image/upload/v1707217329/tequity/home/vzunahxla9bnmhwygspc.jpg',
+      'https://res.cloudinary.com/practice-jay-cloud/image/upload/v1707493908/tequity/home/bsqsa0sw6dzbug9f0ufe.jpg',
   },
   {
     name: 'Automotive',
     description:
       'Stay ahead in the automotive sector using our top-notch CNC solutions, delivering optimal performance and efficiency for manufacturing precision components in vehicles.',
     imgUrl:
-      'https://res.cloudinary.com/practice-jay-cloud/image/upload/v1707217329/tequity/home/vzunahxla9bnmhwygspc.jpg',
+      'https://res.cloudinary.com/practice-jay-cloud/image/upload/v1707493926/tequity/home/wanvenmz4mapm0pqb03l.jpg',
   },
   {
     name: 'Research and Development',
     description:
       'Support academic and research institutions with our versatile machines, aiding breakthroughs in various fields and contributing to innovative initiatives.',
     imgUrl:
-      'https://res.cloudinary.com/practice-jay-cloud/image/upload/v1707217329/tequity/home/vzunahxla9bnmhwygspc.jpg',
+      'https://res.cloudinary.com/practice-jay-cloud/image/upload/v1707493914/tequity/home/pfwf1tjwfhzdhr5yvlka.jpg',
   },
 ];
 

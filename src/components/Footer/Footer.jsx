@@ -52,7 +52,7 @@ function Footer() {
                     data-wow-delay="0.3s"
                   >
                     <div className="footer-widget__column footer-widget__services">
-                      <h2 className="footer-widget__title">Services</h2>
+                      <h2 className="footer-widget__title">Products</h2>
                       <ul className="footer-widget__services-list">
                         <li className="footer-widget__services-list-item">
                           <Link to={'/ecm-machine'}>
@@ -115,24 +115,9 @@ function Footer() {
                       <div className="footer-widget__contact-info-social-links">
                         <ul>
                           <li>
-                            <a href="#">
-                              <i className="fab fa-facebook"></i>
-                            </a>
-                          </li>
-                          <li>
-                            <a href="#">
-                              <i className="fab fa-instagram"></i>
-                            </a>
-                          </li>
-                          <li>
-                            <a href="#">
-                              <i className="fab fa-twitter"></i>
-                            </a>
-                          </li>
-                          <li>
-                            <a href="#">
+                            <Link to={'/'}>
                               <i className="fab fa-linkedin"></i>
-                            </a>
+                            </Link>
                           </li>
                         </ul>
                       </div>

@@ -106,7 +106,7 @@ function Navbar() {
 
             <div className="main-header--one__right clearfix">
               <div className="number">
-                <Link to={'/'}>+91 6351468706</Link>
+                <Link to={'/'}>+91 7385090442</Link>
               </div>
 
               <div className="social-icon">

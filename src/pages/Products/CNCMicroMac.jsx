@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import { CNCPoints, ECMPoints, ECMPoints2 } from './data';
+import { CNCMMImages, CNCPoints } from './data';
 import { Link } from 'react-router-dom';
 import { ScrollToTop } from '../../components';
 
 function CNCMicroMac() {
   const aboutBG = {
-    backgroundImage: `url(https://res.cloudinary.com/practice-jay-cloud/image/upload/v1707274901/tequity/about/oibshld2dn4zwm9ywbgd.jpg)`,
+    backgroundImage: `url(https://res.cloudinary.com/practice-jay-cloud/image/upload/v1707494968/tequity/cnc-micro-machining/fx3ybc91di6qzmmtoov4.jpg)`,
   };
 
   const CTABG = {
@@ -118,6 +118,31 @@ function CNCMicroMac() {
         </div>
       </section>
 
+      {/* gallery section  */}
+      <section className="team-one team-one--team pt-10 mb-20">
+        <div className="container mx-auto">
+          <div className="sec-title text-center">
+            <h2 className="sec-title__title">CNC Micro Machine</h2>
+          </div>
+          <div className="row flex flex-wrap justify-between gap-8 flex-col lg:flex-row ">
+            {CNCMMImages.map((item, index) => (
+              <div
+                className="wow fadeInLeft lg:w-[30%]  lg:max-h-[60vh] lg:overflow-hidden"
+                data-wow-delay="0ms"
+                data-wow-duration="1500ms"
+                key={index}
+              >
+                <div className="team-one__single">
+                  <div className="team-one__single-img">
+                    <img src={item} alt="" />
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* dynamic bar section  */}
       <section className="py-0 pb-16">
         <div>
@@ -128,14 +153,18 @@ function CNCMicroMac() {
           >
             <button
               onClick={() => handleOptionSelect('option1')}
-              style={{ marginRight: '10px' }}
+              style={{
+                color: selectedOption === 'option1' ? '#f37e21' : 'black',
+              }}
               className="font-Domine text-xl"
             >
               Machine
             </button>
             <button
               onClick={() => handleOptionSelect('option2')}
-              style={{ marginRight: '10px' }}
+              style={{
+                color: selectedOption === 'option2' ? '#f37e21' : 'black',
+              }}
               className="font-Domine text-xl"
             >
               Motion
@@ -143,18 +172,27 @@ function CNCMicroMac() {
             <button
               onClick={() => handleOptionSelect('option3')}
               className="font-Domine text-xl"
+              style={{
+                color: selectedOption === 'option3' ? '#f37e21' : 'black',
+              }}
             >
               Spindle
             </button>
             <button
               onClick={() => handleOptionSelect('option4')}
               className="font-Domine text-xl"
+              style={{
+                color: selectedOption === 'option4' ? '#f37e21' : 'black',
+              }}
             >
               Laser
             </button>
             <button
               onClick={() => handleOptionSelect('option5')}
               className="font-Domine text-xl"
+              style={{
+                color: selectedOption === 'option5' ? '#f37e21' : 'black',
+              }}
             >
               Control and Interface
             </button>
@@ -183,9 +221,9 @@ function CNCMicroMac() {
               )}
             </div>
 
-            <div className="lg:w-[50%]">
+            <div className="lg:w-[50%] lg:pt-10">
               <img
-                src="https://res.cloudinary.com/practice-jay-cloud/image/upload/v1707140608/tequity/ecm/wbgdnoxmk405unjfbj4m.jpg"
+                src="https://res.cloudinary.com/practice-jay-cloud/image/upload/v1707210800/tequity/cnc-micro-machining/lkepltc08wffri3xgu5e.jpg"
                 alt=""
                 className=""
               />

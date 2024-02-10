@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { SDPPoints, filamentPoints } from './data';
+import { SDPPoints, filamentImages, filamentPoints } from './data';
 import { ScrollToTop } from '../../components';
 
 function FilamentMaker() {
   const aboutBG = {
-    backgroundImage: `url(https://res.cloudinary.com/practice-jay-cloud/image/upload/v1707274901/tequity/about/oibshld2dn4zwm9ywbgd.jpg)`,
+    backgroundImage: `url(https://res.cloudinary.com/practice-jay-cloud/image/upload/v1707495260/tequity/filament-maker/ynnscb0ohk5edylpzb3k.jpg)`,
   };
 
   const CTABG = {
@@ -100,6 +100,31 @@ function FilamentMaker() {
         </div>
       </section>
 
+      {/* gallery section  */}
+      <section className="team-one team-one--team pt-10 mb-24">
+        <div className="container mx-auto">
+          <div className="sec-title text-center">
+            <h2 className="sec-title__title">Filament Maker</h2>
+          </div>
+          <div className="row flex flex-wrap justify-between gap-8 flex-col lg:flex-row">
+            {filamentImages.map((item, index) => (
+              <div
+                className="wow fadeInLeft lg:w-[30%] shadow-lg"
+                data-wow-delay="0ms"
+                data-wow-duration="1500ms"
+                key={index}
+              >
+                <div className="team-one__single">
+                  <div className="team-one__single-img">
+                    <img src={item} alt="" />
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* dynamic bar section  */}
       <section className="py-0 pb-16">
         <div>
@@ -110,38 +135,54 @@ function FilamentMaker() {
           >
             <button
               onClick={() => handleOptionSelect('option1')}
-              style={{ marginRight: '10px' }}
+              style={{
+                color: selectedOption === 'option1' ? '#f37e21' : 'black',
+              }}
               className="font-Domine text-xl"
             >
               Temperatures
             </button>
             <button
               onClick={() => handleOptionSelect('option2')}
-              style={{ marginRight: '10px' }}
+              style={{
+                color: selectedOption === 'option2' ? '#f37e21' : 'black',
+              }}
               className="font-Domine text-xl"
             >
               Diameter Range
             </button>
             <button
               onClick={() => handleOptionSelect('option3')}
+              style={{
+                color: selectedOption === 'option3' ? '#f37e21' : 'black',
+              }}
               className="font-Domine text-xl"
             >
               Extruder Screw
             </button>
             <button
               onClick={() => handleOptionSelect('option4')}
+              style={{
+                color: selectedOption === 'option4' ? '#f37e21' : 'black',
+              }}
               className="font-Domine text-xl"
             >
               Heating System
             </button>
             <button
               onClick={() => handleOptionSelect('option5')}
+              style={{
+                color: selectedOption === 'option5' ? '#f37e21' : 'black',
+              }}
               className="font-Domine text-xl"
             >
               Advanced Sensor System
             </button>
             <button
               onClick={() => handleOptionSelect('option6')}
+              style={{
+                color: selectedOption === 'option6' ? '#f37e21' : 'black',
+              }}
               className="font-Domine text-xl"
             >
               User Interface
@@ -173,7 +214,7 @@ function FilamentMaker() {
 
             <div className="lg:w-[50%]">
               <img
-                src="https://res.cloudinary.com/practice-jay-cloud/image/upload/v1707140608/tequity/ecm/wbgdnoxmk405unjfbj4m.jpg"
+                src="https://res.cloudinary.com/practice-jay-cloud/image/upload/v1707210444/tequity/filament-maker/zbssgz83wngrqs6zot8u.png"
                 alt=""
                 className=""
               />

@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { ECMPoints, ECMPoints2, SDPPoints } from './data';
+import { SDPPoints, SPDPrinterImages, filamentImages } from './data';
 import { ScrollToTop } from '../../components';
 
 function SPDMetalPrinter() {
   const aboutBG = {
-    backgroundImage: `url(https://res.cloudinary.com/practice-jay-cloud/image/upload/v1707274901/tequity/about/oibshld2dn4zwm9ywbgd.jpg)`,
+    backgroundImage: `url(https://res.cloudinary.com/practice-jay-cloud/image/upload/v1707495139/tequity/3d-printer/qkgvic6cd3yuqksqoksp.jpg)`,
   };
 
   const CTABG = {
@@ -122,6 +122,31 @@ function SPDMetalPrinter() {
         </div>
       </section>
 
+      {/* gallery section  */}
+      <section className="team-one team-one--team pt-10 mb-24">
+        <div className="container mx-auto">
+          <div className="sec-title text-center">
+            <h2 className="sec-title__title">SPD 3D Printer</h2>
+          </div>
+          <div className="row flex flex-wrap justify-between gap-8 flex-col lg:flex-row ">
+            {SPDPrinterImages.map((item, index) => (
+              <div
+                className="wow fadeInLeft lg:w-[30%] lg:max-h-[43vh] lg:overflow-hidden"
+                data-wow-delay="0ms"
+                data-wow-duration="1500ms"
+                key={index}
+              >
+                <div className="team-one__single">
+                  <div className="team-one__single-img">
+                    <img src={item} alt="" className="object-contain" />
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* dynamic bar section  */}
       <section className="py-0 pb-16">
         <div>
@@ -132,32 +157,45 @@ function SPDMetalPrinter() {
           >
             <button
               onClick={() => handleOptionSelect('option1')}
-              style={{ marginRight: '10px' }}
+              style={{
+                color: selectedOption === 'option1' ? '#f37e21' : 'black',
+              }}
               className="font-Domine text-xl"
             >
               Machine <br /> Specs
             </button>
             <button
               onClick={() => handleOptionSelect('option2')}
-              style={{ marginRight: '10px' }}
+              style={{
+                color: selectedOption === 'option2' ? '#f37e21' : 'black',
+              }}
               className="font-Domine text-xl"
             >
               Powder Deposition <br /> System
             </button>
             <button
               onClick={() => handleOptionSelect('option3')}
+              style={{
+                color: selectedOption === 'option3' ? '#f37e21' : 'black',
+              }}
               className="font-Domine text-xl"
             >
               Process Flow: <br /> Infilling
             </button>
             <button
               onClick={() => handleOptionSelect('option4')}
+              style={{
+                color: selectedOption === 'option4' ? '#f37e21' : 'black',
+              }}
               className="font-Domine text-xl"
             >
               Process Flow: <br /> Sintering
             </button>
             <button
               onClick={() => handleOptionSelect('option5')}
+              style={{
+                color: selectedOption === 'option5' ? '#f37e21' : 'black',
+              }}
               className="font-Domine text-xl"
             >
               Machine <br /> Control
@@ -184,9 +222,9 @@ function SPDMetalPrinter() {
               )}
             </div>
 
-            <div className="lg:w-[50%]">
+            <div className="lg:w-[50%] lg:pt-10">
               <img
-                src="https://res.cloudinary.com/practice-jay-cloud/image/upload/v1707140608/tequity/ecm/wbgdnoxmk405unjfbj4m.jpg"
+                src="https://res.cloudinary.com/practice-jay-cloud/image/upload/v1707211189/tequity/3d-printer/lqouvilhjca5uw6da1hf.jpg"
                 alt=""
                 className=""
               />
