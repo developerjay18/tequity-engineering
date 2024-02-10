@@ -74,14 +74,12 @@ const CNCPoints = [
       'Command cutting-edge precision with Diode Laser engraving to render intricate designs with micron-level accuracy for microfluidic applications.',
   },
   {
-    title: 'Omni-Sector',
-    title2: 'Versatility',
+    title: 'Omni-Sector Versatility',
     description:
       'Exploit the versatility of cutting-edge precision with Diode Laser engraving, achieving micron-level accuracy for diverse applications across industries.',
   },
   {
-    title: 'Benefit',
-    title2: '6',
+    title: 'Benefit 6',
     description:
       'Command cutting-edge precision with Diode Laser engraving to render intricate designs with micron-level accuracy for microfluidic applications.',
   },

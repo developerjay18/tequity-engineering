@@ -93,15 +93,15 @@ function CNCMicroMac() {
             <h2 className="sec-title__title">Key features</h2>
           </div>
 
-          <div className="flex justify-between flex-wrap flex-col lg:flex-row">
+          <div className="flex justify-between flex-wrap flex-col lg:flex-row gap-10">
             {CNCPoints.map((item, index) => (
               <div
-                className="lg:w-[30%] wow fadeInLeft"
+                className="lg:w-[48%] wow fadeInLeft"
                 data-wow-delay="0ms"
                 data-wow-duration="1500ms"
                 key={index}
               >
-                <div className="cursor-pointer lg:min-h-[58vh] services-one__single text-center">
+                <div className="cursor-pointer services-one__single ">
                   <h2>
                     <a>
                       <div>{item.title}</div>
@@ -109,7 +109,7 @@ function CNCMicroMac() {
                     </a>
                   </h2>
                   <div className="text">
-                    <p className="lg:px-5">{item.description}</p>
+                    <p className="">{item.description}</p>
                   </div>
                 </div>
               </div>
